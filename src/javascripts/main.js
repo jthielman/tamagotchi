@@ -1,6 +1,9 @@
 import '../styles/main.scss';
-import '@fortawesome/fontawesome-free/js/all';
+// import '@fortawesome/fontawesome-free/js/all';
+import quadList from './components/quadList/quadList';
 
-document.getElementById('self').innerHTML += '<i class="fas fa-pizza-slice"></i>';
+const init = () => {
+  quadList.makeQuadList();
+};
 
-console.error('HELLO IS THIS WORKING');
+init();
