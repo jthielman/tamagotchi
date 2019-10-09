@@ -2,7 +2,7 @@ const statuses = [
   {
     id: 'status1',
     name: 'full',
-    initialValue: 100,
+    initialValue: 10,
   },
   {
     id: 'status2',
@@ -23,4 +23,16 @@ const statuses = [
 
 const getStatuses = () => statuses;
 
-export default { getStatuses };
+const getFull = (arr) => {
+  let full;
+  for (let i = 0; i < arr.length; i += 1) {
+    if (arr[i].name === 'full') {
+      full = arr[i].initialValue;
+    }
+  }
+  return full;
+};
+
+const getFullValue = () => getFull(statuses);
+
+export default { getStatuses, getFullValue };
