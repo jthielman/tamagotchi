@@ -23,16 +23,21 @@ const statuses = [
 
 const getStatuses = () => statuses;
 
-const getFull = (arr) => {
-  let full;
+const getInitialValue = (arr, statusName) => {
+  let status;
   for (let i = 0; i < arr.length; i += 1) {
-    if (arr[i].name === 'full') {
-      full = arr[i].initialValue;
+    if (arr[i].name === statusName) {
+      status = arr[i].initialValue;
     }
   }
-  return full;
+  return status;
 };
 
-const getFullValue = () => getFull(statuses);
+const getFullValue = () => getInitialValue(statuses, 'full');
+const getFunValue = () => getInitialValue(statuses, 'fun');
+const getStrengthValue = () => getInitialValue(statuses, 'strength');
+const getEnergyValue = () => getInitialValue(statuses, 'energy');
 
-export default { getStatuses, getFullValue };
+export default {
+  getStatuses, getFullValue, getFunValue, getStrengthValue, getEnergyValue,
+};
