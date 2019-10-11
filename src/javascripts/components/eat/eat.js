@@ -14,6 +14,7 @@ const eatSteak = (e) => {
   const domString = `<span style="width: ${full}%"></span>`;
   if (e.target.id === 'steak-button') {
     utilities.printToDom('eat-meter', domString);
+    utilities.printToDom('full', `${full}%`);
   }
 };
 
@@ -26,6 +27,7 @@ const eatCandy = (e) => {
   const domString = `<span style="width: ${full}%"></span>`;
   if (e.target.id === 'candy-button') {
     utilities.printToDom('eat-meter', domString);
+    utilities.printToDom('full', `${full}%`);
   }
 };
 

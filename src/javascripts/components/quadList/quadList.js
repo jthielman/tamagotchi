@@ -11,7 +11,7 @@ const makeQuadList = () => {
   for (let i = 0; i < quads.length; i += 1) {
     for (let j = 0; j < statuses.length; j += 1) {
       if (quads[i].statusId === statuses[j].id) {
-        utilities.printToDom(quads[i].id, quad.makeQuad(quads[i], statuses[j].initialValue));
+        utilities.printToDom(quads[i].id, quad.makeQuad(quads[i], statuses[j]));
       }
     }
   }
