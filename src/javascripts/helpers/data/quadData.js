@@ -39,7 +39,7 @@ const quads = [
     buttons: [
       {
         id: 'run-button',
-        name: 'Run away!',
+        name: 'Run away! (bravely)',
         value: 1,
       },
       {
