@@ -14,6 +14,7 @@ const takeNap = (e) => {
   const domString = `<span style="width: ${energy}%"></span>`;
   if (e.target.id === 'nap-button') {
     utilities.printToDom('sleep-meter', domString);
+    utilities.printToDom('energy', `${energy}%`);
   }
 };
 
@@ -26,6 +27,7 @@ const deepSlumber = (e) => {
   const domString = `<span style="width: ${energy}%"></span>`;
   if (e.target.id === 'slumber-button') {
     utilities.printToDom('sleep-meter', domString);
+    utilities.printToDom('energy', `${energy}%`);
   }
 };
 
