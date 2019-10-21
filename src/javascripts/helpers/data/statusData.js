@@ -2,7 +2,7 @@ const statuses = [
   {
     id: 'status1',
     name: 'full',
-    initialValue: 10,
+    initialValue: 100,
   },
   {
     id: 'status2',
